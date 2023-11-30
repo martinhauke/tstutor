@@ -1,11 +1,4 @@
 /**
- * Returns "Hello, World!"
- */
-export function helloWorld(): string {
-  throw Error("Not yet implemented")
-}
-
-/**
  * Returns a greeting containing `name` in the following format:
  * "Hello, <name>!"
  *
@@ -31,7 +24,7 @@ export function greet(name: string): string {
  * // returns "Hello, You!"
  * greet()
  */
-export function advancedGreet(name: string = "You"): string {
+export function advancedGreet(name?: string): string {
   throw Error("Not yet implemented")
 }
 

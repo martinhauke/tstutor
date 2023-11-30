@@ -1,7 +1,9 @@
+// @ts-ignore: typings declaration for the `node:test` built-in module is not yet available.
 import { describe, it } from "node:test";
+// @ts-ignore: typings declaration for the `node:test` built-in module is not yet available.
 import assert from "node:assert/strict";
+import { helloWorld } from "./1-helloWorld";
 import {
-  helloWorld,
   greet,
   advancedGreet,
   scream,
