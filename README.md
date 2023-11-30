@@ -14,11 +14,11 @@ complex exercises and check your solution by runnning the included tests.
 
 To clone the repository (only use one of the following two commands):
 ```bash
-// Use this command if you don't have ssh setup (or don't know what that means)
+# Use this command if you don't have ssh setup (or don't know what that means)
 git clone https://github.com/martinhauke/tstutor.git
 
-// using ssh - If you don't know what that means, you probably want to use the
-// first command instead
+# using ssh - If you don't know what that means, you probably want to use the
+# first command instead
 git clone git@github.com:martinhauke/tstutor.git
 ```
 
