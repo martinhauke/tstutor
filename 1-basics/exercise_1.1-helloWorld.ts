@@ -9,7 +9,8 @@
 
 
 /**
- * Returns "Hello, World!"
+ * Exercise 1.1 - Hello, World!
+ *
  *
  * This is the first exercise and the well known helloWorld example, that is
  * often used as a first example when learning a new programming language.
@@ -24,8 +25,9 @@
  *
  * @see {@link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/return} to learn about return
  *
+ * @returns {string}
  */
-export function helloWorld(): string {
+export function exercise_1_1_helloWorld(): string {
   throw Error("Not yet implemented")
 }
 
