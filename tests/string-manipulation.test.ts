@@ -2,13 +2,16 @@
 import { describe, it } from "node:test";
 // @ts-ignore: typings declaration for the `node:test` built-in module is not yet available.
 import assert from "node:assert/strict";
-import { exercise_2_1_1_greet, exercise_2_1_2_advancedGreet } from "../2-string-manipulation/exercise_2.1-greet";
-import { exercise_2_3_1_countCharacters, exercise_2_3_2_advancedCountCharacters } from "../2-string-manipulation/exercise_2.3-count-characters";
-import { exercise_2_2_scream } from "../2-string-manipulation/exercise_2.2-scream";
-import { exercise_2_4_markTheCenter } from "../2-string-manipulation/exercise_2.4-mark-the-center";
-import { exercise_2_5_removePopel } from "../2-string-manipulation/exercise_2.5-remove-popel";
-import { exercise_2_6_getTagInnerHTML } from "../2-string-manipulation/exercise_2.6-get-tag-inner-html";
-
+import {
+  exercise_2_1_1_greet,
+  exercise_2_1_2_advancedGreet,
+  exercise_2_2_scream,
+  exercise_2_3_1_countCharacters,
+  exercise_2_3_2_advancedCountCharacters,
+  exercise_2_4_markTheCenter,
+  exercise_2_5_removePopel,
+  exercise_2_6_getTagInnerHTML,
+} from "../2-string-manipulation/exercise_2-string-manipulation";
 
 function isSkipped(fn: Function, args: any[]): boolean {
   try {
