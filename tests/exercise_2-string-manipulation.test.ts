@@ -104,17 +104,23 @@ describe("exercise_2_2_scream", {skip: isSkipped(exercise_2_2_scream, [""])}, ()
 
 describe("exercise_2_4_markTheCenter", {skip: isSkipped(exercise_2_4_markTheCenter, ["test"])}, () => {
   it("Marks the center in an even string", () => {
-    const inputString = "even";
-    const expected = "ev[center]en";
+    const inputString1 = "even";
+    const expected1 = "ev[center]en";
+    const inputString2 = "even but longer!";
+    const expected2 = "even but[center] longer!";
 
-    assert.equal(exercise_2_4_markTheCenter(inputString), expected);
+    assert.equal(exercise_2_4_markTheCenter(inputString1), expected1);
+    assert.equal(exercise_2_4_markTheCenter(inputString2), expected2);
   });
 
   it("Marks the center in an even string", () => {
-    const inputString = "odd";
-    const expected = "od[center]d";
+    const inputString1 = "odd";
+    const expected1 = "od[center]d";
+    const inputString2 = "odd but longer!";
+    const expected2 = "odd but [center]longer!";
 
-    assert.equal(exercise_2_4_markTheCenter(inputString), expected);
+    assert.equal(exercise_2_4_markTheCenter(inputString1), expected1);
+    assert.equal(exercise_2_4_markTheCenter(inputString2), expected2);
   });
 
   it('Returns "[center]" for an empty string', () => {
