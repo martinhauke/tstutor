@@ -17,13 +17,15 @@ import {
 
 describe("exercise_2_1_1_greet", {skip: isSkipped(exercise_2_1_1_greet, ["name"])}, () => {
   it("works for regular strings", () => {
-    assert.equal(exercise_2_1_1_greet("Peter"), "Hello, Peter!");
+    assert.equal(exercise_2_1_1_greet("Mega"), "Hello, Mega!");
+    assert.equal(exercise_2_1_1_greet("Mr. Anderson"), "Hello, Mr. Anderson!");
   });
 });
 
 describe("exercise_2_1_2_advancedGreet", {skip: isSkipped(exercise_2_1_2_advancedGreet, [])}, () => {
   it("works for regular strings", () => {
     assert.equal(exercise_2_1_2_advancedGreet("Peter"), "Hello, Peter!");
+    assert.equal(exercise_2_1_2_advancedGreet("Mr. Anderson"), "Hello, Mr. Anderson!");
   });
 
   it("works with no name given", () => {
