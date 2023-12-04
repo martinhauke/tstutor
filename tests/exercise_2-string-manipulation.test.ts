@@ -2,6 +2,7 @@
 import { describe, it } from "node:test";
 // @ts-ignore: typings declaration for the `node:test` built-in module is not yet available.
 import assert from "node:assert/strict";
+import { isSkipped } from "./skip-tests-helper";
 import {
   exercise_2_1_1_greet,
   exercise_2_1_2_advancedGreet,
@@ -13,16 +14,6 @@ import {
   exercise_2_6_getTagInnerHTML,
 } from "../2-string-manipulation/exercise_2-string-manipulation";
 
-function isSkipped(fn: Function, args: any[]): boolean {
-  try {
-    fn(...args)
-  } catch (err: unknown) {
-    if (err instanceof Error && err.message === "Not yet implemented") {
-      return true
-    }
-  }
-  return false
-}
 
 describe("exercise_2_1_1_greet", {skip: isSkipped(exercise_2_1_1_greet, ["name"])}, () => {
   it("works for regular strings", () => {
