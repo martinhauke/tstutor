@@ -5,7 +5,9 @@ import {
   exercise_3_2_logValuesToConsole,
   exercise_3_3_copyArray,
   exercise_3_4_removeAtIndex,
-} from "../3-arrays/exercise_3-arrays";
+  exercise_3_5_pushToArray,
+  exercise_3_6_addAtIndex,
+} from "../exercises/3-arrays/exercise_3-arrays";
 import { isSkipped } from "./skip-tests-helper";
 
 describe(
@@ -196,6 +198,109 @@ describe(
       assert.equal(inputArray[0], clonedInputArray[0]);
       assert.equal(inputArray[1], clonedInputArray[1]);
       assert.equal(inputArray[2], clonedInputArray[2]);
+    });
+  },
+);
+
+describe(
+  "exercise_3_5_pushToArray",
+  { skip: isSkipped(exercise_3_5_pushToArray, [[]]) },
+  () => {
+    it("adds the element at the end of the array", () => {
+      const inputArray = [1, 2, 4];
+      const value = 9;
+
+      const actual = exercise_3_5_pushToArray(inputArray, value);
+      const expected = [1, 2, 4, 9];
+
+      assert.equal(actual.length, expected.length);
+      assert.equal(actual[0], expected[0]);
+      assert.equal(actual[1], expected[1]);
+      assert.equal(actual[2], expected[2]);
+      assert.equal(actual[3], expected[3]);
+    });
+
+    it("does not mutate the original array", () => {
+      const inputArray = [1, 2, 4];
+      const value = 9;
+      const modifiedArray = exercise_3_5_pushToArray(inputArray, value);
+
+      assert.ok(inputArray !== modifiedArray);
+      assert.equal(inputArray[0], 1);
+      assert.equal(inputArray[1], 2);
+      assert.equal(inputArray[2], 4);
+    });
+  },
+);
+
+describe(
+  "exercise_3_6_addAtIndex",
+  { skip: isSkipped(exercise_3_6_addAtIndex, [[]]) },
+  () => {
+    it("adds the element at the correct index of the array", () => {
+      const inputArray = [1, 2, 4];
+      const value = 9;
+      const index = 1;
+
+      const actual = exercise_3_6_addAtIndex(inputArray, value, index);
+      const expected = [1, 9, 2, 4];
+
+      assert.equal(actual.length, expected.length);
+      assert.equal(actual[0], expected[0]);
+      assert.equal(actual[1], expected[1]);
+      assert.equal(actual[2], expected[2]);
+      assert.equal(actual[3], expected[3]);
+    });
+
+    it("does not add item if index is out of bounds", () => {
+      const inputArray = [1, 2, 4];
+      const value = 9;
+      const negativeIndex = -1;
+      const outOfBoundsIndex = 10;
+
+      const actualNegative = exercise_3_6_addAtIndex(
+        inputArray,
+        value,
+        negativeIndex,
+      );
+      const actualOutOfBounds = exercise_3_6_addAtIndex(
+        inputArray,
+        value,
+        outOfBoundsIndex,
+      );
+      const expected = [...inputArray];
+
+      assert.equal(actualOutOfBounds.length, expected.length);
+      assert.equal(actualOutOfBounds[0], expected[0]);
+      assert.equal(actualOutOfBounds[1], expected[1]);
+      assert.equal(actualOutOfBounds[2], expected[2]);
+      assert.equal(actualNegative.length, expected.length);
+      assert.equal(actualNegative[0], expected[0]);
+      assert.equal(actualNegative[1], expected[1]);
+      assert.equal(actualNegative[2], expected[2]);
+    });
+
+    it("does not mutate the original array", () => {
+      const inputArray = [1, 2, 4];
+      const value = 9;
+      const index = 1;
+      const negativeIndex = -1;
+
+      const actual = exercise_3_6_addAtIndex(inputArray, value, index);
+      const expected = [1, 9, 2, 4];
+      const actualNegative = exercise_3_6_addAtIndex(
+        inputArray,
+        value,
+        negativeIndex,
+      );
+
+      assert.notEqual(actual, inputArray);
+      assert.notEqual(actualNegative, inputArray);
+      assert.equal(actual.length, expected.length);
+      assert.equal(actual[0], expected[0]);
+      assert.equal(actual[1], expected[1]);
+      assert.equal(actual[2], expected[2]);
+      assert.equal(actual[3], expected[3]);
     });
   },
 );

@@ -72,33 +72,63 @@ export const exercise_3_4_removeAtIndex = <Type>(
   throw Error("Not yet implemented");
 };
 
+/**
+ * Add value to the end of an array.
+ *
+ * @example
+ * // returns [2, 1, 4]
+ * exercise_3_5_pushToArray([2, 1], 4)
+ *
+ */
 export const exercise_3_5_pushToArray = <Type>(
   inputArray: Array<Type>,
   value: Type,
 ): Array<Type> => {
-  // add the value to the end of the array
   throw Error("Not yet implemented");
 };
 
+/**
+ * Add a value at the specified index to the array.
+ * If the index does not exist in the array, a copy of the original array
+ * is returned.
+ *
+ * @example
+ * // returns [1, 2, 8, 3]
+ * exercise_3_6_addAtIndex([1, 2, 3], 8, 2)
+ */
 export const exercise_3_6_addAtIndex = <Type>(
   inputArray: Array<Type>,
   value: Type,
   index: number,
 ): Array<Type> => {
-  // add the value at the correct index
   throw Error("Not yet implemented");
 };
 
+/**
+ * This function receives an array of numbers and returns a copy
+ * of that array without any odd numbers
+ *
+ * @example
+ * // returns [2, 4, 8]
+ * exercise_3_7_removeOddNumbers([1,2,3,4,5,8,9])
+ */
 export const exercise_3_7_removeOddNumbers = (
   numbers: Array<number>,
 ): Array<number> => {
-  // remove all odd numbers from the array `numbers`
   throw Error("Not yet implemented");
 };
 
+/**
+ * This function receives an array and will round each value to the nearest
+ * multiple of 10.
+ *
+ * @example
+ * // returns [0, 0, 20, 100]
+ * exercise_3_8_roundNumbersToNearestMultipleOfTen([1,3,18,95])
+ *
+ */
 export const exercise_3_8_roundNumbersToNearestMultipleOfTen = (
   numbers: Array<number>,
 ): Array<number> => {
-  // round all numbers in `numbers` to the nearest multiple of 10 (e.g 12 -> 10, 234 -> 230, 15 -> 20)
   throw Error("Not yet implemented");
 };

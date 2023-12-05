@@ -119,11 +119,14 @@ export const exercise_2_5_removePopel = (text: string): string => {
 
 /**
  * Return the text between the start and end tag.
+ *
+ * This function expects a string containing html and another string containing
+ * the name of a tag.
  * For this example assume that each tag only exists once.
  *
  * @example
  * // returns "<h1>Test</h1><div>Stuff</div>"
- * exercise_2_6_getTagInnerHTML("<html><head></head><body><h1>Test</h1><div>Stuff</div></body></html>")
+ * exercise_2_6_getTagInnerHTML("<html><head></head><body><h1>Test</h1><div>Stuff</div></body></html>", "body")
  */
 export const exercise_2_6_getTagInnerHTML = (
   htmlString: string,

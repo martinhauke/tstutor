@@ -2,7 +2,7 @@
 import { describe, it } from "node:test";
 // @ts-ignore: typings declaration for the `node:test` built-in module is not yet available.
 import assert from "node:assert/strict";
-import { exercise_1_1_helloWorld } from "../1-basics/exercise_1.1-helloWorld";
+import { exercise_1_1_helloWorld } from "../exercises/1-basics/exercise_1.1-helloWorld";
 import { isSkipped } from "./skip-tests-helper";
 
 describe("helloWorld", { skip: isSkipped(exercise_1_1_helloWorld, []) }, () => {

@@ -12,7 +12,7 @@ import {
   exercise_2_4_markTheCenter,
   exercise_2_5_removePopel,
   exercise_2_6_getTagInnerHTML,
-} from "../2-string-manipulation/exercise_2-string-manipulation";
+} from "../exercises/2-string-manipulation/exercise_2-string-manipulation";
 
 describe(
   "exercise_2_1_1_greet",
