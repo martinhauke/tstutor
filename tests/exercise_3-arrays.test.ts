@@ -7,6 +7,7 @@ import {
   exercise_3_4_removeAtIndex,
   exercise_3_5_pushToArray,
   exercise_3_6_addAtIndex,
+  exercise_3_7_removeOddNumbers,
 } from "../exercises/3-arrays/exercise_3-arrays";
 import { isSkipped } from "./skip-tests-helper";
 
@@ -301,6 +302,28 @@ describe(
       assert.equal(actual[1], expected[1]);
       assert.equal(actual[2], expected[2]);
       assert.equal(actual[3], expected[3]);
+    });
+  },
+);
+
+describe(
+  "exercise_3_7_removeOddNumbers",
+  { skip: isSkipped(exercise_3_7_removeOddNumbers, [[]]) },
+  () => {
+    it("removes odd numbers from array", () => {
+      const inputArray = [1, 2, 0, 3, 5, 6, 6, 5, 8, 9, 123, 124, -3, -4];
+      const expectedResult = [2, 0, 6, 6, 8, 124, -4];
+
+      const actualResult = exercise_3_7_removeOddNumbers(inputArray);
+
+      assert.equal(actualResult.length, expectedResult.length);
+      assert.equal(actualResult[0], expectedResult[0]);
+      assert.equal(actualResult[1], expectedResult[1]);
+      assert.equal(actualResult[2], expectedResult[2]);
+      assert.equal(actualResult[3], expectedResult[3]);
+      assert.equal(actualResult[4], expectedResult[4]);
+      assert.equal(actualResult[5], expectedResult[5]);
+      assert.equal(actualResult[6], expectedResult[6]);
     });
   },
 );
