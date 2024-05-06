@@ -1,5 +1,5 @@
 /**
- * Exercise 2 - String manipulation
+ * Exercise 1 - String manipulation
  *
  * In this exercise, you will learn how to work with strings.
  * Tasks will include putting strings together, searching in strings and
@@ -11,18 +11,30 @@
  */
 
 /**
+ * Returns the text it receives as parameter.
+ *
+ * @example
+ * // returns "Hello"
+ * exercise_1_0_echo("Hello")
+ *
+ */
+export function exercise_1_0_echo(text: string): string {
+  throw Error("Not yet implemented")
+}
+
+/**
  * Returns a greeting containing `name` in the following format:
  * "Hello, <name>!"
  *
  * @example
  * // returns "Hello, Peter!"
- * exercise_2_1_1_greet("Peter")
+ * exercise_1_1_1_greet("Peter")
  *
  * @see String operators: {@link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_operators#string_operators}
  *
  * @see Template literals/Template strings: {@link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals}
  */
-export function exercise_2_1_1_greet(name: string): string {
+export function exercise_1_1_1_greet(name: string): string {
   throw Error("Not yet implemented")
 }
 
@@ -34,16 +46,16 @@ export function exercise_2_1_1_greet(name: string): string {
  *
  * @example
  * // returns "Hello, Peter!"
- * exercise_2_1_2_advancedGreet("Peter")
+ * exercise_1_1_2_advancedGreet("Peter")
  *
  * @example
  * // returns "Hello, You!"
- * exercise_2_1_2_advancedGreet()
+ * exercise_1_1_2_advancedGreet()
  *
  * @see Default parameters: {@link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters}
  *
  */
-export function exercise_2_1_2_advancedGreet(name?: string): string {
+export function exercise_1_1_2_advancedGreet(name?: string): string {
   throw Error("Not yet implemented")
 }
 
@@ -52,9 +64,9 @@ export function exercise_2_1_2_advancedGreet(name?: string): string {
  *
  * @example
  * // returns "THIS IS AN EXAMPLE"
- * exercise_2_2_scream("This is an Example")
+ * exercise_1_2_scream("This is an Example")
  */
-export function exercise_2_2_scream(text: string): string {
+export function exercise_1_2_scream(text: string): string {
   throw Error("Not yet implemented")
 }
 
@@ -63,9 +75,9 @@ export function exercise_2_2_scream(text: string): string {
  *
  * @example
  * // returns 5
- * exercise_2_3_1_countCharacters("Hello")
+ * exercise_1_3_1_countCharacters("Hello")
  */
-export function exercise_2_3_1_countCharacters(text?: string): number {
+export function exercise_1_3_1_countCharacters(text?: string): number {
   throw Error("Not yet implemented")
 }
 
@@ -74,17 +86,17 @@ export function exercise_2_3_1_countCharacters(text?: string): number {
  *
  * @example
  * // returns 5
- * exercise_2_3_2_advancedCountCharacters("Hello")
+ * exercise_1_3_2_advancedCountCharacters("Hello")
  *
  * @example
  * // returns 5
- * exercise_2_3_2_advancedCountCharacters(" Hello ")
+ * exercise_1_3_2_advancedCountCharacters(" Hello ")
  *
  * @example
  * // returns 29
- * exercise_2_3_2_advancedCountCharacters("Test this String with white spaces")
+ * exercise_1_3_2_advancedCountCharacters("Test this String with white spaces")
  */
-export function exercise_2_3_2_advancedCountCharacters(text: string): number {
+export function exercise_1_3_2_advancedCountCharacters(text: string): number {
   throw Error("Not yet implemented")
 }
 
@@ -95,13 +107,13 @@ export function exercise_2_3_2_advancedCountCharacters(text: string): number {
  *
  * @example
  * //returns "te[center]st"
- * exercise_2_4_markTheCenter("test")
+ * exercise_1_4_markTheCenter("test")
  *
  * @example
  * //returns "tes[center]ts"
- * exercise_2_4_markTheCenter("tests")
+ * exercise_1_4_markTheCenter("tests")
  */
-export function exercise_2_4_markTheCenter(text: string): string {
+export function exercise_1_4_markTheCenter(text: string): string {
   throw Error("Not yet implemented")
 }
 
@@ -111,9 +123,9 @@ export function exercise_2_4_markTheCenter(text: string): string {
  *
  * @example
  * // returns "this is foo"
- * exercise_2_5_removePopel("this is popel")
+ * exercise_1_5_removePopel("this is popel")
  */
-export const exercise_2_5_removePopel = (text: string): string => {
+export const exercise_1_5_removePopel = (text: string): string => {
   throw Error("Not yet implemented")
 };
 
@@ -126,9 +138,9 @@ export const exercise_2_5_removePopel = (text: string): string => {
  *
  * @example
  * // returns "<h1>Test</h1><div>Stuff</div>"
- * exercise_2_6_getTagInnerHTML("<html><head></head><body><h1>Test</h1><div>Stuff</div></body></html>", "body")
+ * exercise_1_6_getTagInnerHTML("<html><head></head><body><h1>Test</h1><div>Stuff</div></body></html>", "body")
  */
-export const exercise_2_6_getTagInnerHTML = (
+export const exercise_1_6_getTagInnerHTML = (
   htmlString: string,
   tagName: string,
 ): string => {
