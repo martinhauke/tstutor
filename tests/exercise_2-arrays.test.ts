@@ -8,6 +8,7 @@ import {
   exercise_2_5_pushToArray,
   exercise_2_6_addAtIndex,
   exercise_2_7_removeOddNumbers,
+  exercise_2_8_roundNumbersToNearestMultipleOfTen,
 } from "../exercises/2-arrays/exercise_2-arrays";
 import { isSkipped } from "./skip-tests-helper";
 
@@ -324,6 +325,27 @@ describe(
       assert.equal(actualResult[4], expectedResult[4]);
       assert.equal(actualResult[5], expectedResult[5]);
       assert.equal(actualResult[6], expectedResult[6]);
+    });
+  },
+);
+
+describe(
+  "exercise_2_8_roundNumbersToNearestMultipleOfTen",
+  { skip: isSkipped(exercise_2_8_roundNumbersToNearestMultipleOfTen, [[]]) },
+  () => {
+    it("rounds numbers correctly", () => {
+      const inputArray = [1, 2, 0, 5, 123, 999, -4];
+      const expectedResult = [0, 0, 0, 10, 120, 1000, 0];
+
+      const actualResult = exercise_2_8_roundNumbersToNearestMultipleOfTen(inputArray);
+
+      assert.equal(actualResult.length, expectedResult.length);
+      assert.equal(actualResult[0], expectedResult[0]);
+      assert.equal(actualResult[1], expectedResult[1]);
+      assert.equal(actualResult[2], expectedResult[2]);
+      assert.equal(actualResult[3], expectedResult[3]);
+      assert.equal(actualResult[4], expectedResult[4]);
+      assert.equal(actualResult[5], expectedResult[5]);
     });
   },
 );
